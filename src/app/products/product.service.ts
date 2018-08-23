@@ -28,7 +28,7 @@ export class ProductService {
         // in real world app, we may send the server to some remote logging infrastructure
         // instead of just logging it to the console
         let errorMessage = '';
-        if (err.error instanceOf ErrorEvent) {
+        if (err.error instanceof ErrorEvent) {
             // A client-side of network error occured. Handle it accordingly
             errorMessage = `An error occured: ${err.error.message}`;
         } else {
